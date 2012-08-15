@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
+    xml:lang="en">
+    <head>            
+      <title>Scenes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script src="libs/jquery.js"> </script>
+        <script src="scripts/scene/SceneManager.js"> </script>
+        <link rel="stylesheet" href="styles/main.css"> </link>
+	<script>
+		$(document).click(function(){
+			STSceneManager.loadScene("scene_test");
+		});
+	</script>
+    </head>
+    <body>
+	<div id="scene_container">
+	    <div class="scene_layer">
+	    	<h1>Example</h1>
+	   	 <p>This is an example.</p>
+	    	<img src="images/character.png" />
+   	     </div>
+	</div>
+    </body>
+</html>
+

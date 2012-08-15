@@ -1,3 +1,19 @@
 #player{
 	position: fixed;
 }
+
+.some_div{
+	background-color: #DDAADD;
+}
+
+#scene_container {
+	position: fixed;
+	top: 100px;
+	left: 450px;
+}
+
+#scene_container>.scene_layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
