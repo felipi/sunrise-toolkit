@@ -3,19 +3,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <script src="../libs/jquery.js"> </script>
         <script src="../scripts/input/InputManager.js"> </script>
+        <script src="../scripts/fx/MotionBlur.js"> </script>
         <link rel="stylesheet" href="../styles/main.css"> </link>
 
         <script>
         $(document).ready(function(){
             STInputManager.addEventListener("stinputmove", function(event){
-                $("#player").css("top", STInputManager.input_position.y);
-                $("#player").css("left", 32 + STInputManager.input_position.x);
+                $(".player").css("top", STInputManager.input_position.y);
+                $(".player").css("left", 32 + STInputManager.input_position.x);
             });
+            //STMotionBlur.applyToObject($(".player"));
         });
         </script>
     </head>
 
     <body>
-        <img id="player" src="images/character.png">
+        <img class="player" src="images/character.png">
     </body>
 </html>
